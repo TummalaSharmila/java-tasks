@@ -1,0 +1,16 @@
+package mycaptain;
+
+import java.util.Scanner;
+public class TimeConversion 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scan= new Scanner(System.in);
+        int min;
+        min=scan.nextInt();
+        System.out.println(+min+"minutes is approximately "+(min/525600)+"years");
+        int day = (min%525600)/(60*24);
+        System.out.println("and"+day+"days");
+    }
+    
+}
